@@ -16,9 +16,9 @@ def format_response(weather_json):
     return (weather_report, icon_name)
         
 
-def wether_info(city_name):
-    weather_key = '850eda4d63dd53a6dd4d2eb8c26eb586'
-    url = 'api.openweathermap.org/data/2.5/weather'
+def weather_info(city_name):
+    weather_key = '31bd7bdf7f2be12124b4ca67e1fa7cad'
+    url = 'https://api.openweathermap.org/data/2.5/weather'
     params = {'APPID': weather_key, 'q': city_name, 'units': 'imperial'}
     res = req.get(url, params)
     weather_json = res.json()
